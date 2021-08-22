@@ -1,5 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
 body{
     margin: 0;
+    background-color: firebrick;
 }
 .header{
     width: 100%;
@@ -11,11 +15,43 @@ body{
     overflow: hidden;
 }
 .coverImage{
-
     object-fit: contain;
-    animation: zoom-out 2s ease-out;
+    transform-origin: top left;
+    animation: zoom-out 2s forwards;
 }
 
+.logoText{
+    z-index: 10;
+    overflow: hidden;
+    font-family: 'Rampart One';
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    margin-top: -20px;
+    padding:0;
+    font-size: 2rem;
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    z-index: 5;
+}
+
+.navBtn{
+    font-size: 2rem;
+    border-radius: 10px 10px 0 0;
+}
+.navBtn:hover{
+    background-color: turquoise;
+}
 @keyframes zoom-out{
     0%{
         transform: scale(1,1);
