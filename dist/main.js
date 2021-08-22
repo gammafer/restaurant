@@ -1,0 +1,1 @@
+(()=>{"use strict";document.getElementById("content").appendChild(function(){const e=document.createElement("header");e.classList.add("header");const t=document.createElement("div");t.classList.add("coverImageDiv");const d=document.createElement("img");return d.classList.add("coverImage"),d.src="OIP.jpg",t.appendChild(d),e.appendChild(t),e}()),console.log("Hello world")})();
