@@ -8,7 +8,7 @@ function navbar(){
 
     const aboutBtn =document.createElement('button');
     aboutBtn.classList.add('navBtn');
-    aboutBtn.innerHTML="About";
+    aboutBtn.innerHTML="Menu";
 
     const contactBtn =document.createElement('button');
     contactBtn.classList.add('navBtn');
