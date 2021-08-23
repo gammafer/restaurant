@@ -1,4 +1,6 @@
 import navbar from "./navbar";
+import homePage from "./home"
+import menuPage  from "./menu";
 function header(){
     const header=document.createElement("header");
     header.classList.add("header");
@@ -27,6 +29,7 @@ function createPage(){
     const content= document.getElementById("content");
     content.appendChild(navbar());
     content.appendChild(header());
+    content.appendChild(homePage());
 }
 
 export default createPage;
