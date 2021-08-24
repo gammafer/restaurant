@@ -9,6 +9,10 @@ function homePage(){
     pizzaBox.classList.add('pizzaBox');
     pizzaBox.src="pizzabox.jpg";
     homeTab.appendChild(pizzaBox);
+    const pepperoni=document.createElement('img');
+    pepperoni.classList.add('pepperoni');
+    pepperoni.src="Pepperoni-Pizza.png";
+    homeTab.appendChild(pepperoni);
     
     return homeTab;
 }

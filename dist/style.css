@@ -112,6 +112,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 
 }
 .homeText{
@@ -122,11 +123,22 @@ body{
 .pizzaBox{
     width: 350px;
     margin:0 auto;
+    align-self: center;
+    box-shadow: 10px 10px 8px;
 }
 .pizzaBox:hover{
     
     transform-origin: top center;
     animation: pizza-box 2s forwards;
+}
+.pepperoni{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -10;
+    width: 350px;
+    height: 350px;
 }
 
 @keyframes zoom-out{
@@ -144,7 +156,7 @@ body{
     }
     100%
     {
-        transform: rotate3d(1,0,0,-80deg);
+        transform: rotate3d(1,0,0,-70deg);
     }
     
 }
