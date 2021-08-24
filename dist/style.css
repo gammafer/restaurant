@@ -105,6 +105,29 @@ body{
     width: 90%;
     margin: 15px 0;
 }
+.homeTab{
+    width: 90vw;
+    height: 50vh;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.homeText{
+
+    font-family: 'Dancing Script';
+    text-align: center;
+}
+.pizzaBox{
+    width: 350px;
+    margin:0 auto;
+}
+.pizzaBox:hover{
+    
+    transform-origin: top center;
+    animation: pizza-box 2s forwards;
+}
 
 @keyframes zoom-out{
     0%{
@@ -113,4 +136,15 @@ body{
     100%{
         transform:scale(0.95,0.95);
     }
+}
+
+@keyframes pizza-box {
+    0%{
+        transform: rotate3d(0,0,0,0deg);
+    }
+    100%
+    {
+        transform: rotate3d(1,0,0,-80deg);
+    }
+    
 }

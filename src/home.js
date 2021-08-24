@@ -5,6 +5,10 @@ function homePage(){
     homeText.classList.add('homeText');
     homeText.innerHTML='Welcome to Mamma Pizzeria! Mamma Mia!'
     homeTab.appendChild(homeText);
+    const pizzaBox=document.createElement('img');
+    pizzaBox.classList.add('pizzaBox');
+    pizzaBox.src="pizzabox.jpg";
+    homeTab.appendChild(pizzaBox);
     
     return homeTab;
 }
