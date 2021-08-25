@@ -13,6 +13,7 @@ body{
     height: 50vh;
 }
 .coverImageDiv{
+    position: relative;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -27,7 +28,7 @@ body{
     z-index: 10;
     overflow: hidden;
     font-family: 'Sacramento';
-    position: relative;
+    position: absolute;
     float: left;
     top: 50%;
     left: 50%;
@@ -40,9 +41,6 @@ body{
     background-color: rgba(255, 255, 255, 0.5);
 }
 .navbar{
-    position: absolute;
-    top: 0;
-    left: 0;
     display: flex;
     justify-content: center;
     margin-top: 10px;
@@ -52,7 +50,7 @@ body{
 
 .navBtn{
     font-size: 2rem;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     margin:0 10px 0 10px;
     width:150px;
 }
@@ -159,4 +157,42 @@ body{
         transform: rotate3d(1,0,0,-70deg);
     }
     
+}
+
+@media only screen and (max-width: 600px) {
+    .header{
+        height: 20vh;
+    }
+    .navBtn{
+        font-size: 1rem;
+        margin:0;
+        width:auto;
+    }
+    .logoText{
+        font-size: 1.5rem;
+    }   
+    .coverImage{
+        width: 110vw;
+    }
+    .menuTab{
+        width: 100vw;
+    }
+    .pizzaText{
+        font-size: 1rem;
+    }
+    .pizzaDiv{
+        margin:0;
+        width:100%;
+    }
+    .pizzaImg{
+        width: 50px;
+        height: 50px;
+
+    }
+    .pizzaBox{
+        width: 50vw;
+    }
+    .pepperoni{
+        width: 50vw;
+        height: auto;}
 }
