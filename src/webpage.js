@@ -1,6 +1,7 @@
 import navbar from "./navbar";
 import homePage from "./home"
 import menuPage  from "./menu";
+import contactPage from "./contact";
 
 let currentPage;
 const content= document.getElementById("content");
@@ -51,6 +52,9 @@ function changeTab(e){
     }
     else if(newTab=='Menu'){
         content.appendChild(menuPage());
+    }
+    else if(newTab=='Contact'){
+        content.appendChild(contactPage());
     }
     currentPage=content.childNodes[2];
     console.log(currentPage);
